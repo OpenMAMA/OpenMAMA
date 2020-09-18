@@ -27,10 +27,13 @@
 
 typedef uuid_t wUuid;
 
-#define wUuid_generate_time uuid_generate_time
+#define wUuid_generate              uuid_generate
+#define wUuid_generate_time         uuid_generate_time
+int wUuid_generate_time_safe (wUuid myUuid);
+#define wUuid_generate_random       uuid_generate_random
 
 #define wUuid_unparse uuid_unparse
 
-#define wUuid_clear(UUID) uuid_clear(UUID);
+#define wUuid_clear(UUID) uuid_clear(UUID)
 
 #endif /* WUUID_H__ */

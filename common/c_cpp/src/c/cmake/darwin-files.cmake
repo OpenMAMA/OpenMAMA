@@ -6,4 +6,5 @@ set(SYSTEM_SOURCES
         darwin/wSemaphore.c
         darwin/port.c
         darwin/clock.c
+        darwin/wUuid.c
 )
